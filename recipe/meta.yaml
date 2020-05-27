@@ -1,17 +1,17 @@
 {% set name = "pint-pulsar" %}
-{% set version = "0.6.3" %}
+{% set version = "0.7" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 3ab01cb3d7f6ddbad9fd62a7e7f4049105fbffa326d193d7fed1ba3e66408dae
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 426be45d46129d97ae227395bf0fd3d79b7272bfb48ac7137ca295093bc62e01
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [py27]
   skip: true  # [win]
 # Add [skip appveyor] to commit messages to prevent windows from starting at all
@@ -47,7 +47,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.md
-  summary: "A Pulsar Timing Package, written in Python from scratch"
+  summary: A Pulsar Timing Package, written in Python from scratch
   doc_url: https://nanograv-pint.readthedocs.io/en/latest/
   dev_url: https://github.com/nanograv/PINT
 
