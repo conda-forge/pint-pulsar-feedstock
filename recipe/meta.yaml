@@ -32,6 +32,7 @@ requirements:
     - corner >=2.0.1
     - uncertainties
     - pyerfa
+    - loguru
 
 # The PyPI package "pint" is a units package whose package name conflicts with ours so they must not both be installed
 # This should prevent that
