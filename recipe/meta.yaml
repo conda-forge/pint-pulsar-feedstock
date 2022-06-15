@@ -18,11 +18,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python
     - setuptools
 
   run:
-    - python >=3.8
+    - python
     - numpy >=1.17.0
     - astropy >=4.0,!=4.0.1,!=4.0.1.post1
     - scipy >=0.18.1
