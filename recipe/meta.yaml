@@ -12,17 +12,17 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: true  # [win or py<36]
+  skip: true  # [win or py<38]
 # Add [skip appveyor] to commit messages to prevent windows from starting at all
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.8
     - setuptools
 
   run:
-    - python
+    - python >=3.8
     - numpy >=1.17.0
     - astropy >=4.0,!=4.0.1,!=4.0.1.post1
     - scipy >=0.18.1
