@@ -32,7 +32,7 @@ requirements:
     - corner >=2.0.1
     - uncertainties
     - pyerfa
-    - nestle>=0.2.0
+    - nestle >=0.2.0
     - loguru
 
 # The PyPI package "pint" is a units package whose package name conflicts with ours so they must not both be installed
