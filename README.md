@@ -1,11 +1,11 @@
-About pint-pulsar
-=================
+About pint-pulsar-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pint-pulsar-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/nanograv/PINT
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pint-pulsar-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Pulsar Timing Package, written in Python from scratch
 
