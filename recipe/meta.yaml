@@ -1,5 +1,5 @@
 {% set name = "pint-pulsar" %}
-{% set version = "0.9.3" %}
+{% set version = "0.9.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 665e58c72740247fb9d24a702498ffe9d5ebbeb3ed8df95fabf6e779b95f5159
+  sha256: 9207ee2d7ec3ae007b7f638d119e101e5f0043c238737127950a106ecafc979b
 
 build:
   number: 0
