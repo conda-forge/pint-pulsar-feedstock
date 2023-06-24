@@ -1,5 +1,5 @@
 {% set name = "pint-pulsar" %}
-{% set version = "0.9.5" %}
+{% set version = "0.9.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9207ee2d7ec3ae007b7f638d119e101e5f0043c238737127950a106ecafc979b
+  sha256: d3f8adbd299b4118ec10fac51b8a429e036d5edfe91b91103af9278adfc3fa78
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
     - python
     - numpy >=1.18.5
     - astropy >=4.0,!=4.0.1,!=4.0.1.post1
-    - scipy >=0.18.1
+    - scipy >=1.4.1
     - jplephem >=2.6
     - matplotlib-base >=3.2.0
     - emcee >=3.0.1
