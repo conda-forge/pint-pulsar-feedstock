@@ -1,5 +1,5 @@
 {% set name = "pint-pulsar" %}
-{% set version = "0.9.7" %}
+{% set version = "0.9.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f892168ba8a4bb16ec962d11e3e43c761edede67c852e830f59f8a1d105a2aa3
+  sha256: a088da3919fe451a91d7058a312b29a42bcd5d46a30147a1b2f006979efdeba8
 
 build:
   number: 0
@@ -34,6 +34,7 @@ requirements:
     - pyerfa
     - nestle >=0.2.0
     - loguru
+    - numdifftools
 
 # The PyPI package "pint" is a units package whose package name conflicts with ours so they must not both be installed
 # This should prevent that
