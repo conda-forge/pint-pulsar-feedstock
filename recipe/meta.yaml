@@ -1,13 +1,13 @@
 {% set name = "pint-pulsar" %}
-{% set version = "1.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f19d71e032d6b7143c7089efddda2ea08a141623a546526dd1f6fdfa525aa0f5
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: e27d7aaf4480dbca7c5c9128596c4a4f23ec6d659d82d0669bfaf4e0491eb2ea
 
 build:
   number: 0
