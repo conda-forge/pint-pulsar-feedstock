@@ -10,7 +10,7 @@ source:
   sha256: 9fcd6a6ba767854d099f7798d862ca9810377c22ad5d26ddc023239c22b8ea21
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [win or py<38]
 # Add [skip appveyor] to commit messages to prevent windows from starting at all
@@ -25,7 +25,7 @@ requirements:
   run:
     - python
     - numpy >=1.23.0
-    - astropy >=5.0.5
+    - astropy-base >=5.0.5
     - scipy >=1.9.0
     - jplephem >=2.6
     - matplotlib-base >=3.4.3
