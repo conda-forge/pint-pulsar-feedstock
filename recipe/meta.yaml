@@ -1,5 +1,5 @@
 {% set name = "pint-pulsar" %}
-{% set version = "1.1.4" %}
+{% set version = "1.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 6e2ee28e3b0340797479e499746a27afa1a1e6ec814a30bc295177d1a1b23423
+  sha256: 4925e089cf116ac92d332e75962af40f81653975721f237619f50787f10fdb0a
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [win or py<38]
 # Add [skip appveyor] to commit messages to prevent windows from starting at all
