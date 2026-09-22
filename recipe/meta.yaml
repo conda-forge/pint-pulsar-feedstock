@@ -10,7 +10,7 @@ source:
   sha256: f5cd2050512b4d4b8dd1f118e48df7b80d732c0df958154bafbbf79b085665df
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [win or py<38]
 # Add [skip appveyor] to commit messages to prevent windows from starting at all
